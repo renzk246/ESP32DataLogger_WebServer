@@ -117,8 +117,8 @@ void setup(){
   pinMode(pinLed, OUTPUT);
 
   // CHECK SD CARD
-//  initializeSD();
-//  readSettings();
+  initializeSD();
+  readSettings();
 
   // WiFi and WEBSERVER INITIALIZATION
   initializeServer();
