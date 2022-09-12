@@ -9,7 +9,6 @@
 #include <WiFi.h>
 #include <WebServer.h>
 
-//nani
 
 //=== WIFI AP and WEBSERVER ===//
 const char* ssid = "ESP32";
@@ -19,7 +18,6 @@ IPAddress gateway(172,16,1,1);
 IPAddress subnet(255,255,255,0);
 WebServer server(80);      
 
-//NANI
 
 //=== PIN/MODULE ASSIGNEDMENT ===//
 #define pinVoltage 34
@@ -118,8 +116,8 @@ void setup(){
   pinMode(pinLed, OUTPUT);
 
   // CHECK SD CARD
-  initializeSD();
-  readSettings();
+//  initializeSD();
+//  readSettings();
 
   // WiFi and WEBSERVER INITIALIZATION
   initializeServer();
